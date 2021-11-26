@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form_sub {
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form_sub > p {
+    font-size: 16px;
+}
+
+.sub_input {
+    background: no-repeat url(./img/brow.jpg);
+    background-position: right;
+    background-color: #000;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    max-width: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.wrapper_content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    line-height: 25px;
+}
+
+.lock,
+.delivery,
+.return,
+.support {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+
+.img {
+    align-self: center;
+}
+
+@media screen and (max-width:900px) {
+    .wrapper_content {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        margin: 50px;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:579px) {
+    .wrapper_content {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        align-items: center;
+    }
+
+    .lock,
+    .delivery,
+    .return,
+    .support {
+        padding-bottom: 20px;
+    }
+}
